@@ -1,0 +1,17 @@
+        <template>
+
+        <div class="slds-box slds-box_xx-small">
+
+            <lightning-card title="Iterator Demo" icon-name="custom:custom14">
+        <template for:each={contacts} for:item="cc" for:index="index">
+            <div key={cc.id}>{cc.name}  {cc.email}  {cc.index}</div>
+            
+        </template>
+
+                
+            </lightning-card>
+
+        </div>
+           
+
+        </template>

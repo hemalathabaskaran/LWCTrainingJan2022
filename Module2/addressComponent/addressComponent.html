@@ -1,0 +1,24 @@
+<template>
+    <lightning-card>
+    <div class="slds-grid slds-gutters" >
+        <div class="slds-col">
+          <h2 style="color:cornflowerblue;">Permanent Address </h2>
+          <p>Enter Permanent address as govt Id Proof</p>
+           <lightning-input label="Address Line1" name="txt1"></lightning-input>
+           <lightning-input label="Address Line2" name="txt2"></lightning-input>
+           <lightning-input label="LandMark" name="txt3"></lightning-input>
+           <lightning-input label="Zipcode" name="txt4"></lightning-input>
+
+        </div>
+        <div class="slds-col">
+            <h2 style="color:cornflowerblue;">Current Address </h2>
+            <lightning-input type="checkbox" label="Same as Permanent Address" onchange={doOperation}> </lightning-input>
+            <lightning-input label="Address Line1">{var1}</lightning-input>
+            <lightning-input label="Address Line2">{var2}</lightning-input>
+            <lightning-input label="LandMark">{var3}</lightning-input>
+            <lightning-input label="Zipcode" >{var4}</lightning-input>
+ 
+      </div>
+    </div>
+</lightning-card>
+</template>
